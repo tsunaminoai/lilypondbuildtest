@@ -13,7 +13,8 @@ choir:
 
 	lilypond-book --pdf --format=latex --output "$(WORKDIR)/LilyPondTemp" $(FILEBASE).lytex ;
 	cd "$(WORKDIR)/LilyPondTemp"; \
-	cp "$(WORKDIR)/styles/liturgy.sty" ./; \
+	mkdir -p styles; \
+	cp "$(WORKDIR)/styles/liturgy.sty" ./styles/; \
 	$(LATEX) $(FILEBASE).tex ;
 	mkdir -p $(OUTDIR)
 	cp "$(WORKDIR)/LilyPondTemp/$(FILEBASE).pdf" "$(OUTDIR)";
