@@ -19,4 +19,5 @@ deploy:
   file: output/pascha.pdf
   on:
     repo: tsunaminoai/lilypondbuildtest
+    tags: true
 
