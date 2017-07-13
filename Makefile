@@ -11,7 +11,7 @@ all: choir
 
 choir:
 
-	@echo "Building with LilyPond";
+	@echo "Building with LilyPond in $(WORKDIR)";
 	lilypond-book --pdf --format=latex --output "$(TEMPDIR)" "$(FILEBASE).lytex" ;
 	@echo "Moving to temp environment";
 	mkdir -p "$(TEMPDIR)/styles/";
