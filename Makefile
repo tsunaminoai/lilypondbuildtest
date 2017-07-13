@@ -19,7 +19,7 @@ choir:
 	cp "$(WORKDIR)/liturgy.sty" "$(TEMPDIR)";
 
 	@echo "Running LaTeX on LilyPond output";
-	#dont remove this non-linebreak
+	#dont remove this non-linebreak n stuff
 	cd "$(TEMPDIR)";\
 	$(LATEX) "$(FILEBASE).tex" ;
 	mkdir -p "$(OUTDIR)";
