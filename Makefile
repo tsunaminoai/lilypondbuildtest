@@ -16,7 +16,7 @@ choir:
 	lilypond-book --pdf --format=latex --output "$(TEMPDIR)" "$(FILEBASE).lytex" ;
 	@echo "Moving to temp environment";
 	mkdir -p "$(TEMPDIR)/styles/";
-	cp "$(WORKDIR)/styles/liturgy.sty" "$(TEMPDIR)/styles/";
+	cp "$(WORKDIR)/liturgy.sty" "$(TEMPDIR)";
 
 	@echo "Running LaTeX on LilyPond output";
 	#dont remove this non-linebreak
