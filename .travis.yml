@@ -1,5 +1,5 @@
 dist: trusty
-sudo: false
+sudo: true
 install:
   - sudo apt-get install lilypond texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
   - sudo apt-get install chktex
