@@ -4,7 +4,7 @@ before_install:
   - curl http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh > install.sh
   - sudo sh install.sh --batch
 install:
-  - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+  - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-xetex
   - sudo apt-get install chktex
 script:
   - make
