@@ -13,6 +13,7 @@ choir:
 
 	@echo "Building with LilyPond in $(WORKDIR)";
 	lilypond-book --pdf --format=latex --output "$(TEMPDIR)" "$(FILEBASE).lytex" ;
+	ls -R
 	@echo "Moving to temp environment";
 	mkdir -p "$(TEMPDIR)/styles/";
 	cp "$(WORKDIR)/styles/liturgy.sty" "$(TEMPDIR)/styles/";
