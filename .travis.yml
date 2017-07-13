@@ -8,7 +8,15 @@ install:
   - sudo apt-get install chktex
 script:
   - make
-  - chktex -W # Print version information.
-  - chktex -q -n 6 *.lytex 2>/dev/null| tee lint.out    # If lint output is non-empty report an error.
-  - chktex -q -n 6 text/*.lytex 2>/dev/null| tee -a lint.out   # If lint output is non-empty report an error.
+  - chktex -W
+  - chktex -q -n 6 *.lytex 2>/dev/null| tee lint.out
+  - chktex -q -n 6 text/*.lytex 2>/dev/null| tee -a lint.out
   - test ! -s lint.out
+deploy:
+  provider: releases
+  api_key:
+    secure: Zr145tcxRxN7yH9EENubqpqgaK6lFuzv1wTYqPuDaJMgtw4ZI05K7n2YKk9GZ/j+EMQ99+sBGWMMPL1IP2HQsKZd5AxBNZ0b9G4fel2frDodFABFqd3H/Q9xD3nEU+r6rfFFD4hVrO9OUPy0IIYxKsokOjkcR0JTynhn8Vvn3ZXtE6E8pS1/hMoDJ/KT+KovXh+f0dwa+/DBeSSFiDWyR6/O9ViodILAiomzRiEf96KHQxO9KOQ2/li4nVyC13GNUzR6kHscAm5MAmpy6hQjd4yflOxkEUVXTH1EF1R//Q/YKIp75209GdthkTg6raefZ2cvqYL0PAB3q8vRWuU0viX3CPUhZKpzzKfrLaXMmJCjiAnnSOIRmsVmia/8wN/Xh2D//AqJ2zB5uAZ9QqvwYcE8eptXpFaWr0ek6LdI7n5Rj+6OhwwejidSEuYqjjybKrHaZnxydX9rDhqgZC3l5hwe33dKYH99OFclGfxa73LmWlfw63IB9jAofTup0ZQLh/PaNNKhqFI5tLhfP4L+0By398nWWQfR5b/fG+wJK0SLSb4AQePf6+v4Mea7JP15snmJT+0/G3S0Rckc/K7oFaX63hkBq+ov3bkfOxC1VIfeaECW2nVrKSy3DIvwiKS1EoRgpr/jUjGAxdJN4XPTmdlyAxf8hPUoooZ3vwCsXE8=
+  file: output/pascha.pdf
+  on:
+    repo: tsunaminoai/lilypondbuildtest
+
