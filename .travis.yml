@@ -1,10 +1,9 @@
 dist: xenial
 sudo: true
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libxml2-dev
+  - curl http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.18.2-1.linux-64.sh > install.sh
+  - sudo sh install.sh --batch
 install:
-  - sudo apt-get install lilypond=2.18.2-4.1
   - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
   - sudo apt-get install chktex
 script:
