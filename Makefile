@@ -15,6 +15,7 @@ choir:
 	cd "$(WORKDIR)/LilyPondTemp"; \
 	cp "$(WORKDIR)/styles/liturgy.sty" ./; \
 	$(LATEX) $(FILEBASE).tex ;
+	mkdir -p $(OUTDIR)
 	cp "$(WORKDIR)/LilyPondTemp/$(FILEBASE).pdf" "$(OUTDIR)";
 
 clean:

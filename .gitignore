@@ -4,5 +4,6 @@
 *.pdf
 *.fdb_latexmk
 *.fls
+*.out
 LilyPondTemp/*
 output/*.pdf

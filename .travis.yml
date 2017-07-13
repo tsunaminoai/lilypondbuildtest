@@ -1,0 +1,9 @@
+install:
+  - sudo apt-get install lilypond xelatex
+  - sudo apt-get install chktex
+script:
+  - make
+  - chktex -W # Print version information.
+  - chktex -q -n 6 *.lytex | tee lint.out    # If lint output is non-empty report an error.
+  - chktex -q -n 6 text/*.lytex | tee -a lint.out   # If lint output is non-empty report an error.
+  - test ! -s lint.out
