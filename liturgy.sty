@@ -1,0 +1,33 @@
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc} \usepackage{palatino}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{subfiles}
+\usepackage{pifont}
+\usepackage{marvosym}
+\usepackage{geometry}
+\usepackage{marginnote}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{ifthen}
+
+\headheight     0.1in
+\headsep        0.4in
+\textheight     9.2in
+\oddsidemargin  0.2in
+\evensidemargin -0.2in
+\leftmargini    0.5in % For quote sections
+\textwidth      6.5in
+\parindent      0.0in
+\pagestyle{empty}
+\newcommand{\betweenLilyPondSystem}[1]{\\[3mm]}
+
+\newcommand{\chapterhead}[1]{\begin{center}{\Huge \bf #1}\end{center}}
+\newcommand{\sectionhead}[1]{\begin{center}{\Large \bf #1}\end{center}}
+\newcommand{\priest}[2][normal]{
+  \reversemarginpar \marginnote{\bf\color{red}{\Cross}}
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{quiet}}}
+    { \textit{\color{Gray}{(Quietly) #2}}   \\  }
+    { \color{Black}{#2}   \\  }
+}
+\newcommand{\choir}[1]{\reversemarginpar \marginnote{\bf\color{red}{\ding{64}}} #1  \\ }
+\newcommand{\instruction}[1]{\textit{#1}  \\ }

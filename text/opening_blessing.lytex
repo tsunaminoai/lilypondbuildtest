@@ -1,0 +1,5 @@
+\sectionhead{Opening Blessing}
+
+\priest{Blessed is the kingdom of the Father and of the Son and of the Holy Spirit, now and ever and unto the ages of ages.}
+
+\choir{Amen \\ \lilypondfile{hymns/amen_1.ly}}

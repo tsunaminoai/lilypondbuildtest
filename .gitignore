@@ -1,0 +1,8 @@
+*.log
+*.aux
+*.gz
+*.pdf
+*.fdb_latexmk
+*.fls
+LilyPondTemp/*
+output/*.pdf

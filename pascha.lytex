@@ -1,0 +1,30 @@
+% This document is the main lytex file. To compile, you will need lilypond
+% Run the make file (or bat file) to automatically compile the PDF into the output folder
+% This file only defines the order of the service. Each section is in its own file
+
+
+\documentclass[11pt,letterpaper]{article}
+%pull in the file with all the additional packages and custom commands
+\usepackage{liturgy}
+
+%start the document
+\begin{document}
+
+\pagestyle{headings}
+
+
+\chapterhead{Liturgy for Great and Holy Pascha}
+
+%each section is its own little file.
+\input{./text/opening_blessing.lytex}
+
+\input{./text/paschal_hymn.lytex}
+
+\input{./text/great_litany_of_peace.lytex}
+
+\input{./text/antiphon_1.lytex}
+
+\input{./text/little_litany.lytex}
+
+
+\end{document}

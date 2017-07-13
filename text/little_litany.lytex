@@ -1,0 +1,22 @@
+
+\sectionhead{The Little Litany}
+
+\priest{Again and again, in peace let us pray to the Lord.}
+
+\choir{ Lord have mercy \\ \lilypondfile{hymns/lord_have_mercy_1.ly}}
+
+
+\priest{Help us, save us, have mercy on use and protects, O God, by Thy grace.}
+
+\choir{ Lord have mercy \\ \lilypondfile{hymns/lord_have_mercy_2.ly}}
+
+
+\priest{Commeorating our ever holy, every pure, most blessed and glorious Lady, the Birth-Giver of God and ever Virgin Mary together with all the saints, let us commend ourselves and one another and our whole life unto Christ our God.}
+
+\choir{To Thee O Lord \\ \lilypondfile{hymns/to_thee_o_lord.ly}}
+
+\priest{For Thou are a good God and loves mankind, and unto Thee we ascribe glory to the Father and to the Son and to the Holy Spirit, now and ever and unto ages of ages.}
+
+\choir{ Amen \\ \lilypondfile{hymns/amen_1.ly}}
+
+\instruction{The deacon bows and stand before the Icon of the Birth-Giver of God, holding the stole in three fingers of his right hand, for the singing of the Second Antiphon.}

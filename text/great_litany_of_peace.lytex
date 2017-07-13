@@ -1,0 +1,61 @@
+
+\sectionhead{The Great Litany of Peace}
+
+\priest{In peace let us pray to the Lord.}
+
+\choir{ Lord have mercy \\ \lilypondfile{hymns/lord_have_mercy_1.ly}}
+
+
+
+\priest{For the peace that comes from heaven above and for the salvation of our souls, let us pray to the Lord.}
+
+\choir{ Lord have mercy \\ \lilypondfile{hymns/lord_have_mercy_2.ly}}
+
+
+\priest{For prase throughout the whole world, for the welfare of the holy churches of God and for the union of them all, let us pray to the Lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_1.ly}}
+
+\priest{For our God loving Bishop N. for our esteemed priesthood, for the diaconate in Christ, for all the clergy and people, let us pray to the Lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_2.ly}}
+
+
+\priest{For this holy church and for those who enter it with faith, deboutness and the fear of God, let us pray to the Lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_1.ly}}
+
+\priest{For the honorable government of our country and al civil authorities and for our armed forces, let us pray to the Lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_2.ly}}
+
+
+\priest{For this city and for every city, village and country, and for those who with faith dwell in them, let us pray to the Lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_1.ly}}
+
+\priest{For healthful season, for an abundance of the fruits of the earth and for peaceful time, let us pray to the Lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_2.ly}}
+
+\priest{For those who travel by land, by sea, and by air, for the sick and the suffering and for those who are held in capitvity, and for the safety and salvation, let us pray to the Lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_1.ly}}
+
+\priest{For our dliveryance from all affliction, wrath, and want, let us pray to the lord.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_2.ly}}
+
+\priest{Help us, save us, have mercy on us and protect us, O God, by Thy grace.}
+
+\choir{ Lord have mercy  \\ \lilypondfile{hymns/lord_have_mercy_1.ly}}
+
+\priest{Commeorating our ever holy, every pure, most blessed and glorious Lady, the Birth-Giver of God and ever Virgin Mary together with all the saints, let us commend ourselves and one another and our whole life unto Christ our God.}
+
+\choir{To Thee O Lord \\ \lilypondfile{hymns/to_thee_o_lord.ly}}
+
+\priest[quiet]{ O Lord our God, whose might is beyond description, whose glory surpasses all understanding, whose mercy is without limit, whose love for makind is beyond expression: O Master, in Your kindess look down upon us and this holy church and bestow upon us and those praying with us You abundant mercies and compassion.}
+
+\priest{ For to You are due all glory, honor and adoration, to the Father and the Son and the Holy Spirit, now and ever and unto ages of ages }
+
+\choir{ Amen \\ \lilypondfile{hymns/amen_1.ly}}
