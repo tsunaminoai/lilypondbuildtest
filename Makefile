@@ -9,6 +9,12 @@ TEMPDIR="$(WORKDIR)/LilyPondTemp"
 
 all: choir
 
+check:
+	chktex -W
+	chktex -q -n 6 *.lytex 2>/dev/null| tee lint.out
+	chktex -q -n 6 text/*.lytex 2>/dev/null | tee -a lint.out
+	test ! -s lint.out || (echo 'LaTeX did not pass lint. Check lint.out. $(LINT)'; exit 1)
+
 choir:
 
 	@echo "Building with LilyPond in $(WORKDIR)";
@@ -28,3 +34,4 @@ choir:
 
 clean:
 	rm -rf "$(WORKDIR)/LilyPondTemp"
+	rm lint.out
